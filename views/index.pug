@@ -1,0 +1,90 @@
+doctype html
+head
+  meta(charset='utf-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  title Kino
+  meta(name='viewport' content='width=device-width, initial-scale=1')
+  link(rel='stylesheet' type='text/css' media='screen' href='/styles/main.css')
+  script(type='module' src='main.js' defer='')
+  script(src='https://kit.fontawesome.com/8357c99e29.js' crossorigin='anonymous')
+  // The script above needs to be added on every singel html file that contains moviecard
+header
+  img.kinoLogo(src='images/logoHead.png' alt='logotyp för Kino' usemap='#logoMap')
+  map(name='logoMap')
+    area(shape='rect' coords='225,10,573,143' href='index.html' alt='Kino')
+  .navContainer
+    nav.headerNav
+      a.headerNavItem(href='moviesPage.html')  See all movies
+      a.headerNavItem(href='#') Link
+      a.headerNavItem(href='#') Link
+      a.headerNavItem(href='#') Link
+      a.headerNavItem(href='#') Link
+      a.headerNavItem(href='#') Link
+      a.headerNavItem(href='#') Link
+      a.headerNavItem(href='#') Link
+    .searchBar
+      input.searchInput(type='search' placeholder='Search...')
+      button.searchBtn Search
+main
+  section.upperSection
+    figure.cinemaSeats
+      img.picUnderNav(src='images/seats.png' alt='Image under the navbar not fount!')
+      button.allMoviesBtn(type='button') Show all movies
+    h2.topTitle Top three movies
+    hr.lineX
+    figure.topThree
+      // ---top 3 generates here--------
+  section.mid
+    section.filterSection
+      form
+        //
+          Here goes the filter menu.
+    section.allMovies
+      h2.topTitle All Movies
+      figure.movies
+        //
+          Here goes all movies.
+    section.extraSection
+      // here goes all the cards like present card 4DX!...
+  section.lowerSection
+    figure.upComingMovies
+      // up coming movies here
+    .upComingEvents
+      // All the events here
+      hr.eventLine
+      h2 Kommande evenemang
+      .cardsContainer
+        .eventCard
+          img.eventImg(src='images/event1.png' alt='Event image not found!')
+          p.eventInfo Here goes the information about event
+          button.eventBtn
+            | Buy ticket
+            i.fa-solid.fa-money-bill-1-wave
+        .eventCard
+          img.eventImg(src='images/event2.png' alt='Event image not found')
+          p.eventInfo Here goes the information about event
+          button.eventBtn
+            | Buy ticket
+            i.fa-solid.fa-money-bill-1-wave
+section.skiReviewerSection
+  figure
+    img.skiReviewer(src='./pictures/skier.png' alt='Skidåkare som ser på bio')
+    blockquote Oerh&ouml;rt m&auml;ktigt
+    figcaption -Stig Helmer
+  figure
+    img.skiReviewer(src='./pictures/skierTwo.png' alt='Skidåkare som ser på bio')
+    blockquote Helt underbar helg
+    figcaption -Johan Jonsson
+  figure
+    img.skiReviewer(src='./pictures/skierThree.png' alt='Skidåkare som ser på bio')
+    blockquote Fantastiskt!
+    figcaption -Frida Karlsson
+footer
+  nav
+    a.footerNav.footerAboutUsLink(href='#') Om oss
+    a.footerNav.footerAllMoviesLink(href='#') Alla filmer
+    a.footerNav.footerInstagramLink(href='#') Instagram
+    a.footerNav.footerFacebookLink(href='#') Facebook
+    a.footerNav.footerXLink(href='#') X
+    a.footerNav.footerTosLink(href='#') ToS
+    a.footerNav.footerPrivacyPolicyLink(href='#') Privacy policy
