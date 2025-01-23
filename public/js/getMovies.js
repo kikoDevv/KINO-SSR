@@ -1,11 +1,11 @@
 const movies = {
-    allMovies: [], 
-    released: [], 
+    allMovies: [],
+    released: [],
     upcoming: [],
     //Function that adds all movies to an array
     async getAllMovies() {
-        
-        fetch("content/movies.json")
+
+        fetch("json/movies.json")
         .then(response => {
             return response.json();
         })
