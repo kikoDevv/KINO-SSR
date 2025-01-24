@@ -5,9 +5,8 @@ head
   title Kino
   meta(name='viewport' content='width=device-width, initial-scale=1')
   link(rel='stylesheet' type='text/css' media='screen' href='/styles/main.css')
-  //- script(type='module' src='main.js' defer='')
   script(src='https://kit.fontawesome.com/8357c99e29.js' crossorigin='anonymous')
-  // The script above needs to be added on every singel html file that contains moviecard
+  //-- The script above needs to be added on every singel html file that contains moviecard
 header
   img.kinoLogo(src='pics/logoHead.png' alt='logotyp för Kino' usemap='#logoMap')
   map(name='logoMap')
@@ -33,19 +32,25 @@ main
     h2.topTitle Top three movies
     hr.lineX
     figure.topThree
-      // ---top 3 generates here--------
+      //----top 3 generates here--------
   section.mid
     section.allMovies
       h2.topTitle All Movies
       figure.movies
-        // Here goes all movies
+        //---Here goes all movies
+        .cardsContainer
+          .card
+            img.movieImg(src='pics/1.jpeg')
+            .cardsDetails
+              h3.movieName Movies Name
+              button.movieBtn Buy ticket
     section.extraSection
-      // here goes all the cards like present card 4DX!...
+      //-- here goes all the cards like present card 4DX!...
   section.lowerSection
     figure.upComingMovies
-      // up coming movies here
+      //-- up coming movies here
     .upComingEvents
-      // All the events here
+      //-- All the events here
       hr.eventLine
       h2 Kommande evenemang
       .cardsContainer
