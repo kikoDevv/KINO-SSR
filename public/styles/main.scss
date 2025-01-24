@@ -74,7 +74,6 @@ header {
 	font-family: "Roboto", serif;
 }
 
-
 .skiReviewerSection {
 	background-color: $backgroundColor;
 	width: 100vw;
@@ -98,10 +97,10 @@ header {
 	overflow: auto;
 }
 .upperSection {
-   display: grid;
-   //----------picture under navbar and bnt----------
+	display: grid;
+	//----------picture under navbar and bnt----------
 	.cinemaSeats {
-      position: relative;
+		position: relative;
 		.picUnderNav {
 			width: 100%;
 			height: 90vh;
@@ -120,13 +119,11 @@ header {
 			cursor: pointer;
 		}
 	}
-   //-------------top 3-------------
-   .lineX {
-      margin-top: 10px;
-   }
-
+	//-------------top 3-------------
+	.lineX {
+		margin-top: 10px;
+	}
 }
-
 
 //-------------Top 3-----------------
 .topTitle {
@@ -260,27 +257,27 @@ header {
 			.eventInfo {
 				color: white;
 				margin-left: 10px;
-            padding-top: 20px;
+				padding-top: 20px;
 			}
 
-         .eventBtn {
-            max-width: fit-content;
-            place-self: end;
-            padding: 10px;
-            margin: 0px 10px;
-            border: none;
-            border-radius: 10px;
-            font-family: "Work Sans", sans-serif;
-            font-weight: bold;
-            cursor: pointer;
-            background-color: #2d7dfe;
-            color: white;
-            transition: background-color 0.2s;
-            &:hover {
-               background-color: #ffb509;
-               color: white;
-            }
-         }
+			.eventBtn {
+				max-width: fit-content;
+				place-self: end;
+				padding: 10px;
+				margin: 0px 10px;
+				border: none;
+				border-radius: 10px;
+				font-family: "Work Sans", sans-serif;
+				font-weight: bold;
+				cursor: pointer;
+				background-color: #2d7dfe;
+				color: white;
+				transition: background-color 0.2s;
+				&:hover {
+					background-color: #ffb509;
+					color: white;
+				}
+			}
 		}
 	}
 }
@@ -344,23 +341,31 @@ footer {
 	}
 }
 //----------movie cards------------
-.movies{
-	.cardsContainer{
+.movies {
+	.cardsContainer {
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 		gap: 15px;
-		.card{
+		margin: 100px 20px;
+		.card {
 			background-color: #0e0e1b;
 			overflow: hidden;
 			border-radius: 10px;
-			.movieImg{
+			transition: transform 0.2s, box-shadow 0.2s;
+			&:hover {
+				box-shadow: 0 0 9px 4px rgba(255, 181, 9, 0.5);
+				transform: scale(1.009);
+			}
+			.movieImg {
 				height: 45vh;
 				width: 100%;
+				cursor: pointer;
 			}
-			.cardsDetails{
+			.cardsDetails {
 				display: grid;
 				justify-content: center;
-				.movieBtn{
+				.movieBtn {
+					justify-self: center;
 					max-width: fit-content;
 					padding: 10px;
 					margin: 10px 0px;
@@ -373,8 +378,8 @@ footer {
 					color: white;
 					transition: background-color 0.2s;
 					&:hover {
-					   background-color: #ffb509;
-					   color: white;
+						background-color: #ffb509;
+						color: white;
 					}
 				}
 			}

@@ -296,21 +296,29 @@ footer .footerPrivacyPolicyLink {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 15px;
+  margin: 100px 20px;
 }
 .movies .cardsContainer .card {
   background-color: #0e0e1b;
   overflow: hidden;
   border-radius: 10px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.movies .cardsContainer .card:hover {
+  box-shadow: 0 0 9px 4px rgba(255, 181, 9, 0.5);
+  transform: scale(1.009);
 }
 .movies .cardsContainer .card .movieImg {
   height: 45vh;
   width: 100%;
+  cursor: pointer;
 }
 .movies .cardsContainer .card .cardsDetails {
   display: grid;
   justify-content: center;
 }
 .movies .cardsContainer .card .cardsDetails .movieBtn {
+  justify-self: center;
   max-width: fit-content;
   padding: 10px;
   margin: 10px 0px;
