@@ -1,6 +1,7 @@
 $backgroundColor: #0e0e1b;
 $buttonColor: #175dcc;
 $textColor: #ffffff;
+
 * {
 	margin: 0px;
 	padding: 0px;
@@ -350,9 +351,12 @@ footer {
 		gap: 15px;
 		.card{
 			background-color: #0e0e1b;
-			max-width: fit-content;
 			overflow: hidden;
 			border-radius: 10px;
+			.movieImg{
+				height: 45vh;
+				width: 100%;
+			}
 			.cardsDetails{
 				display: grid;
 				justify-content: center;

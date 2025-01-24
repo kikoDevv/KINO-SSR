@@ -299,9 +299,12 @@ footer .footerPrivacyPolicyLink {
 }
 .movies .cardsContainer .card {
   background-color: #0e0e1b;
-  max-width: fit-content;
   overflow: hidden;
   border-radius: 10px;
+}
+.movies .cardsContainer .card .movieImg {
+  height: 45vh;
+  width: 100%;
 }
 .movies .cardsContainer .card .cardsDetails {
   display: grid;
