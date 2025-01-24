@@ -1,9 +1,7 @@
 const express = require('express');
 const app = express();
-
 app.set('view engine', 'pug');
 app.set('views', './views');
-//--------serve static files from public directory-----
 app.use(express.static('public'));
 app.get('/', async (req, res) => {
     try {
