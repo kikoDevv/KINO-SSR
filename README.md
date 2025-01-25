@@ -9,7 +9,7 @@ Welcome to **Kino**, a **Server-Side Rendered (SSR)** movie website where you ca
 - **SSR (Server-Side Rendering)**: Dynamic rendering for faster and SEO-friendly pages.
 - **Movie Listing**: Browse a list of movies that loads data from a public API.
 - **Movie Detail Page**: Each movie has a dedicated page displaying its title, description, release year, and image.
-- **Search & Filter**: Allows users to search for movies and filter by various criteria.
+- **Search & Filter**: Working on.
 - **Integration Testing**: Tests ensure that each movie page is rendering the correct title with **Jest** and **Supertest**.
 
 ---
@@ -41,7 +41,12 @@ To get started with this project locally, follow these steps:
    ```bash
    npm start
 This will launch the server at http://localhost:5080, where you can access the movie website.
-5. **🧪 Running Tests**:
-   ```bash
-  npm test
+5. 🧪 Running Tests
+     ```bash
+     npm test
+💬 Feedback
+
+Your feedback is always welcome! If you have any suggestions, issues, or just want to share your thoughts, feel free to reach out to me via email at:
+
+📧 Email: kikoDevv@gmail.com
 
