@@ -1,35 +1,17 @@
 doctype html
-html
-  head
-    meta(charset='utf-8')
-    meta(http-equiv='X-UA-Compatible' content='IE=edge')
-    title= Local
-    meta(name='viewport' content='width=device-width, initial-scale=1')
-    link(rel='stylesheet' type='text/css' media='screen' href='/styles/main.css')
-    script(src='https://kit.fontawesome.com/8357c99e29.js' crossorigin='anonymous')
-  body
-    header
-      img.kinoLogo(src='/pics/logoHead.png' alt='logotyp för Kino' usemap='#logoMap')
-      map(name='logoMap')
-        area(shape='rect' coords='225,10,573,143' href='index.html' alt='Kino')
-      .navContainer
-        nav.headerNav
-          a.headerNavItem(href='moviesPage.html') See all movies
-          a.headerNavItem(href='#') Link
-          a.headerNavItem(href='#') Link
-          a.headerNavItem(href='#') Link
-          a.headerNavItem(href='#') Link
-          a.headerNavItem(href='#') Link
-          a.headerNavItem(href='#') Link
-        .searchBar
-          input.searchInput(type='search' placeholder='Search...')
-          button.searchBtn Search
-footer
-  nav
-    a.footerNav.footerAboutUsLink(href='#') Om oss
-    a.footerNav.footerAllMoviesLink(href='#') Alla filmer
-    a.footerNav.footerInstagramLink(href='#') Instagram
-    a.footerNav.footerFacebookLink(href='#') Facebook
-    a.footerNav.footerXLink(href='#') X
-    a.footerNav.footerTosLink(href='#') ToS
-    a.footerNav.footerPrivacyPolicyLink(href='#') Privacy policy
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  link(rel='stylesheet' type='text/css' media='screen' href='/styles/main.css')
+  title Info
+body
+  .bodyContainer
+    .cardContainer
+      .imgHolder
+        img.movieImg(src='/pics/central.jpg')
+      .movieInfo
+        h1.movieName name of the movie
+        p.movieIntro
+          | All the description about the movie intro should go over here and
+          | later should be replaced from the API.
+        button.backBtn Back to home
