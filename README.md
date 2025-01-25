@@ -30,15 +30,18 @@ To get started with this project locally, follow these steps:
 
 1. **Clone the repository**:
    ```bash
-   git clone <repository-url>
-
-   Navigate to the project directory: cd <project-directory>
-   Install dependencies: npm install
-   
-🚀 Running the Application
+   git clone https://github.com/kikoDevv/KINO-SSR.git
+2. **Navigate to the project directory**:
+   ```bash
+   cd <where-u-saved-the-files>
+3. **Install dependencies**:
+   ```bash
+   npm install
+4. **🚀 Running the Application**:
+   ```bash
    npm start
-   This will launch the server at http://localhost:5080, where you can access the movie website.
-🧪 Running Tests
-   npm test
+This will launch the server at http://localhost:5080, where you can access the movie website.
+5. **🧪 Running Tests**:
+   ```bash
+  npm test
 
-   
