@@ -40,11 +40,12 @@ html
             .cardsContainer
               each movie in movies
                 .card
-                  img.movieImg(src=movie.image alt="images didn't load")
+                  img.movieImg(src=movie.image alt="images didn't load 404!")
                   .cardsDetails
                     h3.movieName= movie.title
                     button.movieBtn
-                      a(href="/moviesInfo.pug") Go to Movies
+                      //- a(href="/moviesInfo.pug") Go to Movies
+                      a.movieBtn(href=`/movie-info?title=${movie.title}&image=${movie.image}`) About movie
         section.extraSection
   section.lowerSection
     figure.upComingMovies

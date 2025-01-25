@@ -2,15 +2,16 @@ doctype html
 head
   meta(charset='UTF-8')
   meta(name='viewport' content='width=device-width, initial-scale=1.0')
-  link(rel='stylesheet' type='text/css' media='screen' href='/styles/main.css')
+  link(rel='stylesheet' type='text/css' media='screen' href='/styles/movieInfo.css')
   title Info
 body
   .bodyContainer
     .cardContainer
       .imgHolder
-        img.movieImg(src='/pics/central.jpg')
+        img.movieImg(src=image alt="Image did not load, 404!")
       .movieInfo
-        h1.movieName name of the movie
+        h1.movieName= title
+        p.movieId ID: #{id}
         p.movieIntro
           | All the description about the movie intro should go over here and
           | later should be replaced from the API.

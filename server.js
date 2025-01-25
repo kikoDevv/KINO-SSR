@@ -23,9 +23,18 @@ app.get('/', async (req, res) => {
     }
 });
 //---rout to moviesInfo
-app.get('/moviesInfo.pug', (req, res) => {
-    res.render('moviesInfo.pug');
+// app.get('/moviesInfo.pug', (req, res) => {
+//     res.render('moviesInfo.pug');
+//   });
+
+
+app.get('/movie-info', (req, res) => {
+    const { title, image, id } = req.query;
+    res.render('moviesInfo', { title, image});
   });
+
+
+
 app.listen(5080, () => {
     console.log('Server running on 5080');
 });
