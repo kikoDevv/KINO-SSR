@@ -41,8 +41,9 @@ To get started with this project locally, follow these steps:
    ```bash
    npm start
 This will launch the server at http://localhost:5080, where you can access the movie website.
-    ```bash
-5. **🧪 Running Tests**
+    ```bash          
+    
+  5. **🧪 Running Tests**
 
     npm test
 
