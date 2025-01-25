@@ -32,7 +32,7 @@ app.get('/movie-info', (req, res) => {
 
 if (require.main === module) {
   app.listen(5080, () => {
-    console.log('Server running on 5080');
+    console.log('Runing on port:5080');
   });
 } else {
   module.exports = app;
