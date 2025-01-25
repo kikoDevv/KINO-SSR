@@ -4,6 +4,7 @@ const path = require('path');
 app.set('view engine', 'pug');
 app.set('views', path.join(__dirname, 'views'));
 app.use(express.static('public'));
+const fetch = require('node-fetch');
 
 // Route to landing page
 app.get('/', async (req, res) => {
@@ -29,6 +30,10 @@ app.get('/movie-info', (req, res) => {
   res.render('moviesInfo', { title, image, intro, publishedAt });
 });
 
-app.listen(5080, () => {
-  console.log('Server running on 5080');
-});
+if (require.main === module) {
+  app.listen(5080, () => {
+    console.log('Server running on 5080');
+  });
+} else {
+  module.exports = app;
+}
