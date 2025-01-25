@@ -27,7 +27,8 @@ app.get('/', async (req, res) => {
 // Route to moviesInfo
 app.get('/movie-info', (req, res) => {
   const { title, image, intro, publishedAt } = req.query;
-  res.render('moviesInfo', { title, image, intro, publishedAt });
+  const year = new Date(publishedAt).getFullYear();
+  res.render('moviesInfo', { title, image, intro, publishedAt: year });
 });
 
 if (require.main === module) {
