@@ -4,7 +4,7 @@
 	"main": "index.js",
 	"scripts": {
 	  "start": "nodemon server.js",
-	  "sass": "sass --watch public/styles/main.scss:public/styles/main.css sass --watch public/styles/movieInfo.scss:public/styles/movieInfo.css"
+	  "sass": "sass --watch public/styles/main.scss:public/styles/main.css public/styles/movieInfo.scss:public/styles/movieInfo.css"
 	},
 	"keywords": [],
 	"author": "",

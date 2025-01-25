@@ -11,8 +11,7 @@ body
         img.movieImg(src=image alt="Image did not load, 404!")
       .movieInfo
         h1.movieName= title
-        p.movieId ID: #{id}
-        p.movieIntro
-          | All the description about the movie intro should go over here and
-          | later should be replaced from the API.
-        button.backBtn Back to home
+        p.movieIntro= intro
+        p.moviePublishedAt Published At: #{publishedAt}
+        button.backBtn#backBtn Back to home
+  script(src='/js/main.js')

@@ -43,9 +43,10 @@ html
                   img.movieImg(src=movie.image alt="images didn't load 404!")
                   .cardsDetails
                     h3.movieName= movie.title
-                    button.movieBtn
+                    //- button.movieBtn
                       //- a(href="/moviesInfo.pug") Go to Movies
-                      a.movieBtn(href=`/movie-info?title=${movie.title}&image=${movie.image}`) About movie
+                      //- a.movieBtn(href=`/movie-info?title=${movie.title}&image=${movie.image}&intro=${movie.intro}`) About movie
+                    button.movieBtn(data-title=movie.title data-image=movie.image data-intro=movie.intro data-publishedAt=movie.publishedAt) About movie
         section.extraSection
   section.lowerSection
     figure.upComingMovies
@@ -80,6 +81,7 @@ section.skiReviewerSection
     img.skiReviewer(src='./pics/skierThree.png' alt='Skidåkare som ser på bio')
     blockquote Fantastiskt!
     figcaption -Frida Karlsson
+  script(src='/js/main.js')
 footer
   nav
     a.footerNav.footerAboutUsLink(href='#') Om oss
