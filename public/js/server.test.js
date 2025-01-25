@@ -1,30 +1,24 @@
 const request = require("supertest");
-const express = require("express");
-const app = require("../../server");
+const app = require("../../server"); 
+const fetch = require("node-fetch");
 
-describe("Integration tests", () => {
-	it("should verify that movie pages display the correct title", async () => {
-		const movies = [
-			{
-				title: "Movie 1",
-				image: "image1.jpg",
-				intro: "Intro 1",
-				publishedAt: "2023-01-01",
-			},
-			{
-				title: "Movie 2",
-				image: "image2.jpg",
-				intro: "Intro 2",
-				publishedAt: "2023-02-01",
-			},
-		];
+describe("Integration Tests: Movie Pages", () => {
+  it("should verify that movie pages display the correct titles", async () => {
+    // Fetch live API data
+    const apiResponse = await fetch("https://plankton-app-xhkom.ondigitalocean.app/api/movies");
+    const apiData = await apiResponse.json();
 
-		for (const movie of movies) {
-			const response = await request(app)
-				.get("/movie-info")
-				.query(movie);
-			expect(response.status).toBe(200);
-			expect(response.text).toContain(movie.title);
-		}
-	});
+    // Ensure the API responded with data
+    expect(apiData.data).toBeDefined();
+    expect(apiData.data.length).toBeGreaterThan(0);
+
+    // Send a request to the landing page
+    const response = await request(app).get("/");
+    expect(response.status).toBe(200);
+
+    // Verify that the titles of all movies from the API are rendered
+    apiData.data.forEach((movie) => {
+      expect(response.text).toContain(movie.attributes.title);
+    });
+  });
 });
