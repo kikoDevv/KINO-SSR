@@ -46,7 +46,7 @@ This will launch the server at http://localhost:5080, where you can access the m
    ```bash
    npm test
 
-💬 Feedback
+💬
 Your feedback is always welcome! If you have any suggestions, issues, or just want to share your thoughts, feel free to reach out to me via email at:
 
 📧 Email: kikoDevv@gmail.com
